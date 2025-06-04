@@ -1,0 +1,35 @@
+name: RealisticPhysics
+version: '1.0'
+main: avx.physics.PhysicsPlugin
+api-version: 1.20
+author: AVX
+description: Realistic physics plugin with structural integrity and momentum
+website: https://github.com/avx
+
+commands:
+  physics:
+    description: Main physics command
+    usage: /physics <enable|disable|reload|status>
+    permission: physics.admin
+    aliases: [rp, realphysics]
+  
+  gravity:
+    description: Set gravity strength for a region
+    usage: /gravity <strength> [radius]
+    permission: physics.admin
+    
+  structure:
+    description: Check structural integrity of nearby blocks
+    usage: /structure [radius]
+    permission: physics.admin
+
+permissions:
+  physics.admin:
+    description: Allows use of all physics commands
+    default: op
+  physics.bypass:
+    description: Bypass physics in creative mode
+    default: op
+  physics.notify:
+    description: Receive notifications about physics events
+    default: op 

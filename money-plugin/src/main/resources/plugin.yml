@@ -1,0 +1,15 @@
+name: MoneyPlugin
+version: 1.0
+main: avx.money.MoneyPlugin
+api-version: 1.20
+
+commands:
+  money:
+    description: Check your balance or manage money
+    usage: /<command> [player]
+  pay:
+    description: Pay money to another player
+    usage: /<command> <player> <amount>
+  cash:
+    description: Cash-related commands
+    usage: /<command>

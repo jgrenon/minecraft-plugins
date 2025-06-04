@@ -1,0 +1,119 @@
+# Realistic Physics Plugin Configuration
+
+# Enable/disable the physics system
+enabled: true
+
+# Physics calculation settings
+physics:
+  # Maximum distance to check for structural support
+  max-support-distance: 10
+  
+  # Minimum blocks needed for structural support
+  min-support-blocks: 2
+  
+  # How often to check physics (ticks, 20 = 1 second)
+  check-interval: 10
+  
+  # Maximum blocks to process per tick (performance)
+  max-blocks-per-tick: 50
+  
+  # Enable chain reactions (blocks falling cause other blocks to fall)
+  chain-reactions: true
+  
+  # Maximum chain reaction distance
+  max-chain-distance: 15
+
+# Gravity settings
+gravity:
+  # Default gravity strength (1.0 = normal, 2.0 = double, 0.5 = half)
+  default-strength: 1.0
+  
+  # Enable momentum and bouncing
+  momentum: true
+  
+  # Bounce factor (0.0 = no bounce, 1.0 = full bounce)
+  bounce-factor: 0.3
+  
+  # Air resistance (affects falling speed over time)
+  air-resistance: 0.02
+
+# Block types that have physics
+physics-blocks:
+  - STONE
+  - COBBLESTONE
+  - STONE_BRICKS
+  - BRICK
+  - DIRT
+  - GRASS_BLOCK
+  - WOOD
+  - OAK_PLANKS
+  - SPRUCE_PLANKS
+  - BIRCH_PLANKS
+  - JUNGLE_PLANKS
+  - ACACIA_PLANKS
+  - DARK_OAK_PLANKS
+  - MANGROVE_PLANKS
+  - CHERRY_PLANKS
+  - BAMBOO_PLANKS
+  - IRON_BLOCK
+  - GOLD_BLOCK
+  - DIAMOND_BLOCK
+  - EMERALD_BLOCK
+  - NETHERITE_BLOCK
+  - COAL_BLOCK
+  - REDSTONE_BLOCK
+  - LAPIS_BLOCK
+
+# Blocks that provide structural support (won't fall and support others)
+support-blocks:
+  - BEDROCK
+  - BARRIER
+  - OBSIDIAN
+  - REINFORCED_DEEPSLATE
+  - ANCIENT_DEBRIS
+
+# Performance settings
+performance:
+  # Maximum chunks to process physics in at once
+  max-chunks: 5
+  
+  # Disable physics when TPS drops below this threshold
+  min-tps: 15.0
+  
+  # Enable async processing (experimental)
+  async-processing: false
+
+# Visual effects
+effects:
+  # Show particles when blocks fall
+  falling-particles: true
+  
+  # Show dust clouds on impact
+  impact-particles: true
+  
+  # Play sounds for physics events
+  sounds: true
+  
+  # Sound volume (0.0 to 1.0)
+  sound-volume: 0.5
+
+# World settings
+worlds:
+  # Enable physics in these worlds only (empty = all worlds)
+  enabled-worlds: []
+  
+  # Disable physics in these worlds
+  disabled-worlds:
+    - creative_world
+    - lobby
+
+# Debug settings
+debug:
+  # Enable debug messages
+  enabled: false
+  
+  # Show structural support lines (for admins)
+  show-support-lines: false
+  
+  # Log physics calculations
+  log-calculations: false 

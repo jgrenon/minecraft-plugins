@@ -1,0 +1,4 @@
+name: WelcomePlugin
+version: 1.0
+main: avx.welcome.WelcomePlugin
+api-version: 1.20
