@@ -1,0 +1,53 @@
+# AI Builder Plugin Configuration
+
+# Build settings
+build:
+  # Maximum size for structures (blocks)
+  max-size: 50
+  
+  # Cooldown between builds (seconds)
+  cooldown: 30
+  
+  # Enable build size and cooldown limits
+  enable-limits: true
+  
+  # Maximum concurrent builds per server
+  max-concurrent: 3
+
+# Message settings
+messages:
+  # Show progress messages during building
+  progress: true
+  
+  # Show AI interpretation messages
+  show-interpretation: true
+
+# AI settings
+ai:
+  # Enable advanced structure recognition
+  advanced-recognition: true
+  
+  # Default structure size when not specified
+  default-size: 8
+  
+  # Enable style interpretation (medieval, modern, etc.)
+  enable-styles: true
+
+# Performance settings
+performance:
+  # Blocks placed per tick (higher = faster but more lag)
+  blocks-per-tick: 5
+  
+  # Maximum blocks in a single structure
+  max-blocks: 10000
+
+# OpenAI Integration (for advanced AI building)
+openai:
+  # Your OpenAI API key (get from https://platform.openai.com/api-keys)
+  api-key: "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"
+  
+  # OpenAI model to use (gpt-4o-mini is recommended for cost-effectiveness)
+  model: "gpt-4o-mini"
+  
+  # Enable OpenAI integration (falls back to keyword matching if disabled)
+  enabled: true 

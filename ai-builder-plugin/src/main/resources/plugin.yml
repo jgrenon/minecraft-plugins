@@ -1,0 +1,34 @@
+name: AIBuilder
+version: '${version}'
+main: avx.aibuilder.AIBuilderPlugin
+api-version: 1.20
+author: AVX
+description: AI-powered building plugin that interprets natural language prompts to create structures
+website: https://github.com/avx
+
+commands:
+  build:
+    description: Build structures using AI-interpreted prompts
+    usage: /build <prompt>
+    permission: aibuilder.build
+    aliases: [construct, create, make]
+  
+  ai:
+    description: AI Builder management commands
+    usage: /ai <reload|status|clear|template|help>
+    permission: aibuilder.admin
+    aliases: [aibuilder, aib]
+
+permissions:
+  aibuilder.build:
+    description: Allows use of the build command
+    default: true
+  aibuilder.admin:
+    description: Allows use of all AI Builder admin commands
+    default: op
+  aibuilder.bypass:
+    description: Bypass build limits and restrictions
+    default: op
+  aibuilder.unlimited:
+    description: No cooldown or size restrictions
+    default: op 
