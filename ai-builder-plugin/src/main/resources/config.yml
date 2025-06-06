@@ -44,7 +44,7 @@ performance:
 # OpenAI Integration (for advanced AI building)
 openai:
   # Your OpenAI API key (get from https://platform.openai.com/api-keys)
-  api-key: "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"
+  api-key: ""
   
   # OpenAI model to use (gpt-4o-mini is recommended for cost-effectiveness)
   model: "gpt-4o-mini"

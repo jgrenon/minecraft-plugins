@@ -12,16 +12,25 @@ repositories {
 
 dependencies {
     compileOnly 'io.papermc.paper:paper-api:1.20.4-R0.1-SNAPSHOT'
+    
+    // Test dependencies
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.1'
+    testImplementation 'org.mockito:mockito-core:5.8.0'
+    testImplementation 'io.papermc.paper:paper-api:1.20.4-R0.1-SNAPSHOT'
 }
 
 java {
     toolchain.languageVersion.set(JavaLanguageVersion.of(17))
 }
 
+test {
+    useJUnitPlatform()
+}
+
 jar {
     manifest {
         attributes(
-            'Main-Class': 'avx.duel.DuelPlugin'
+            'Main-Class': 'avx.welcome.WelcomePlugin'
         )
     }
 
